@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- == Tab TITLE == -->
+    <title>Jimmy-Choo</title>
+
+    <!-- == FAVICON == -->
+    <link href="https://i.postimg.cc/cJgGNfPs/favicon.png" rel="icon" sizes="30x30">
+    <!--https://row.jimmychoo.com/on/demandware.static/-/Library-Sites-jch-shared-general/default/dwe07b3fb8/images/icon/favicon.png-->
+
+    <!-- == StyleSheet == -->
+    <style>
+        *{
+            margin: 0px !important;
+            padding: 0px !important;
+            box-sizing: border-box !important;
+        }
+        /* The animation code */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .text-box button:hover{
+            cursor: pointer;
+            background-color: #7c7c7c;
+            transition: ease 200ms;
+        }
+        .footer-top-a:hover{
+            color: #fff !important;
+            transition: 200ms !important;
+            text-decoration: underline;
+        }
+        .social-icons a:hover i{
+            color: #a6a6a6 !important;
+            transition: 100ms !important;
+        }
+        @media screen and (min-width:0px) and (max-width:330px){
+            .image-box img{
+                height: 220px !important;
+            }
+            .middle{
+                margin: 0px 0px -100px 0px !important;
+            }
+            .middle-container{
+                transform: translateY(-90px) !important;
+            }
+        }
+        @media screen and (min-width:330px) and (max-width:380px){
+            .image-box img{
+                height: 250px !important;
+            }
+        }
+        @media screen and (max-width:600px) and (min-width:380px){
+            .image-box img{
+                height: 305px !important;
+            }
+        }
+        @media screen and (max-width:600px) {
+            body{
+                width: 100vw !important;
+            }
+            .container{
+                width: 100vw !important; 
+                padding: 0px !important;
+            }
+            .top{
+                width: 100%;
+            }
+            .top img{
+                height: 30px !important;
+            }
+            .top p{
+                font-size: 13px !important;
+                line-height: 28px !important;
+                padding: 0px 20px !important;
+            }
+            .middle{
+                width: 100% !important;
+                padding: 0px 12px !important;
+                margin: 0px 0px -70px 0px !important;
+            }
+            .middle-container{
+                display: block !important;
+            }
+            .middle .image-text{
+                padding: 30px 8px 8px 8px !important;
+                aspect-ratio: 16 / 9;
+            }
+            .image-text h1, p{
+                text-align: right !important;
+            }
+            .text-box{
+                height: fit-content !important;
+                width: 300px !important;
+                margin-top: 10px !important;
+            }
+            .image-box{
+                width: 100% !important;
+                text-align: center !important;
+                transform: translateY(20px) !important;
+            }
+            .bottom{
+                display: flex !important;
+                justify-content: center !important;
+                padding: 20px 0px 0px;
+            }
+            .bottom img{
+                height: 200px !important;
+            }
+            footer{
+                width: 100% !important;
+                padding: 12px 0px !important;
+            }
+            footer p{
+                letter-spacing: 0.05em !important;
+            }
+            .social a{
+                margin: 0px 4px !important;
+            }
+        }
+        @media screen and (min-width:600px) {
+            .container{
+                margin: 0 auto !important; 
+                width: 600px !important; 
+            }
+            .image-box img{
+                height: 340px !important;
+            }
+            .middle{
+                margin: 0px 0px -170px 0px !important;
+            }
+        }
+
+        @font-face {
+            font-family: "UniversLT-Condensed";
+            src: url("/on/demandware.static/Sites-jchrow-Site/-/default/dw6f4a08e0/fonts/univers/condensed.woff") format('woff');
+            font-style: normal;
+            font-weight: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        @font-face {
+            font-family: "UniversLT-CondensedBold";
+            src: url("/on/demandware.static/Sites-jchrow-Site/-/default/dw2e2d4b43/fonts/univers/condensed-bold.woff") format('woff');
+            font-style: normal;
+            font-weight: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        @font-face {
+            font-family: "Font Icon";
+            src: url("/on/demandware.static/Sites-jchrow-Site/-/default/dw750331ab/fonts/icons/font-icons.woff") format('woff');
+            font-style: normal;
+            font-weight: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        @font-face {
+            font-family: "ProximaNova";
+            src: url("/on/demandware.static/Sites-jchrow-Site/-/default/dwa2e1fbd9/fonts/zonapro/zonapro-regular-webfont.woff2") format('woff2'), url("/on/demandware.static/Sites-jchrow-Site/-/default/dw3b7fb59a/fonts/zonapro/zonapro-regular-webfont.woff") format('woff');
+            font-style: normal;
+            font-weight: 300;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        @font-face {
+            font-family: "ProximaNova";
+            src: url("/on/demandware.static/Sites-jchrow-Site/-/default/dw6ce1bd46/fonts/zonapro/zonapro-semibold-webfont.woff2") format('woff2'), url("/on/demandware.static/Sites-jchrow-Site/-/default/dw91250e56/fonts/zonapro/zonapro-semibold-webfont.woff") format('woff');
+            font-style: normal;
+            font-weight: 500;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        @font-face {
+            font-family: "ProximaNova";
+            src: url("/on/demandware.static/Sites-jchrow-Site/-/default/dw15605e19/fonts/zonapro/zonapro-bold-webfont.woff2") format('woff2'), url("/on/demandware.static/Sites-jchrow-Site/-/default/dwa570f52a/fonts/zonapro/zonapro-bold-webfont.woff") format('woff');
+            font-style: normal;
+            font-weight: 600;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+    </style>
+
+    <!-- == Font == -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&amp;family=Merriweather+Sans:wght@400;500&amp;display=swap" rel="stylesheet">
+
+    <link rel="preload" href="/on/demandware.static/Sites-jchrow-Site/-/default/dw6f4a08e0/fonts/univers/condensed.woff" as="font" type="font/woff" crossorigin="">
+    <link rel="preload" href="/on/demandware.static/Sites-jchrow-Site/-/default/dw2e2d4b43/fonts/univers/condensed-bold.woff" as="font" type="font/woff" crossorigin="">
+    <link rel="preload" href="/on/demandware.static/Sites-jchrow-Site/-/default/dw750331ab/fonts/icons/font-icons.woff" as="font" type="font/woff" crossorigin="">
+    <link rel="preload" href="/on/demandware.static/Sites-jchrow-Site/-/default/dwa2e1fbd9/fonts/zonapro/zonapro-regular-webfont.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="/on/demandware.static/Sites-jchrow-Site/-/default/dw6ce1bd46/fonts/zonapro/zonapro-semibold-webfont.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="/on/demandware.static/Sites-jchrow-Site/-/default/dw15605e19/fonts/zonapro/zonapro-bold-webfont.woff2" as="font" type="font/woff2" crossorigin="">
+
+    <!-- == ICONS == -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+
+</head>
+<body onload="loadScreen()" style="height: 100% !important; width: 100% !important; display: flex !important; justify-content: center !important; position: relative; margin: 0px auto !important;">
+    <!-- == LOADER == -->
+        <div class="loading" id="loading" style="height: 100vh; width: 100vw; display: block;">
+            <div class="load-h" style="height: 100vh; width: 100vw; display: flex; align-items: center; justify-content: center; left: 0px; top: 0px; background-color: rgb(255, 255, 255);">
+                <img style="height: 200px !important;" src="https://i.postimg.cc/vm11shH4/jimmy-choo.gif" alt="Insert alt text here">
+            </div>
+        </div>
+    <!-- == || LOADER == -->
+    <!-- == MAIN PAGE == -->
+        <div class="load" id="load" style="position: relative; display: none; animation: 3000ms ease 0s 1 normal none running fadeIn;">
+            <div class="container" style="height: fit-content !important; background-color: white !important; padding: 8px 0px 20px 0px !important; margin: 0px auto !important;">
+                <div class="top" style="height: 200px !important; width: 100%; background-color: #000 !important; text-align: center !important; padding: 10px 0px 0px 0px !important; ">
+                    <a style="text-decoration: none;" href="https://www.jimmychoo.com/" target="_blank"><img style="height: 40px !important;" src="https://i.postimg.cc/vZk9R9P6/Jimmy-Choo.png" alt="Jimmy Choo Image"></a>
+                    <p style="font-size: 12px !important; font-weight: 600 !important; font-family: ProximaNova,sans-serif; color: #ffffff !important; text-transform: uppercase; line-height: 30px !important; text-align: center !important; letter-spacing: 0.01em !important; ">Enjoy complimentary shipping as we welcome you here - on all orders.</p>
+                </div>
+                <main style="height: fit-content; width: 100% !important;">
+                    <div class="middle" style="height: fit-content !important; width: 100% !important; padding: 0px 20px !important; display: block !important; background-color: #ffffff !important; ">
+                        <div class="middle-container" style="display: block !important; transform: translateY(-100px);">
+                            <div class="image-text" style="width: 100% !important; height: 300px !important; background-image: url('https://i.postimg.cc/zvxbxRbv/woman.png') !important; background-size: cover !important; background-repeat: no-repeat !important; padding: 30px 10px 10px 10px !important; ">
+                                <h1 style="font-size: 26px !important; font-weight: 600 !important; letter-spacing: 0.1em; font-family: 'Baskervville', serif !important; text-transform: uppercase !important; text-align: right !important; color: #ffffff !important;">Delighted You <br>Signed up!</h1>
+                                <p style="font-size: 10px !important; font-weight: 500 !important; font-family: ProximaNova, sans-serif; letter-spacing: 0.1em !important; text-align: right !important; color: #ffffff !important;">Prep yourself to be one of the first to know <br> the latest news, new collections, and <br> everthing from Jummy Choo</p>
+                            </div>
+                            <div class="text-box" style="height: 168px !important; width: 291px !important; border: 1px solid #000 !important; text-align: center !important; padding: 10px !important; margin: 10px 0px 0px 0px !important; ">
+                                <h2 style="font-size: 26px !important; font-weight: 400 !important; font-family: 'Baskervville', serif !important;">While you are here,</h2>
+                                <p style="margin: 10px 0px !important; font-size: 11px !important; text-align: center !important; line-height: 16px; font-weight: 600 !important; color: #a7a7a7 !important; font-family: ProximaNova, sans-serif; ">We shared the <span style="color: #000 !important;">three design pillars</span> <br> embodying the creative essence of Jimmy Choo- <br> <span style="color: #000 !important;">Pearl, Monogram, Crystal</span></p>
+                                <button target="_blank" onclick="link()" style="height:30px !important;width:146px !important;background-color:#a6a6a6 !important;border:0 !important;outline:none !important;color:#fff !important;font-size:10px !important;font-weight:600 !important;text-transform:uppercase !important;font-family:ProximaNova,sans-serif; margin-top:6px !important;">View <br> the core collection</button>
+                            </div>
+                            <div class="image-box" style="height: fit-content !important; width: 100% !important; z-index: 0; text-align: right !important; transform: translateY(-75px); pointer-events: none;">
+                                <img style="pointer-events: none;" src="https://i.postimg.cc/rsVRG9p7/group.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom" style="height: fit-content !important; padding: 30px 0px 0px !important; background-color: #000 !important; width: 100% !important; display: flex !important; justify-content: center !important; z-index: 10;">
+                        <a href="https://www.jimmychoo.com/" target="_blank" style="text-decoration: none;"><img style="height: 150px !important; margin: auto !important;" src="https://i.postimg.cc/xj4KZBmb/image-4.png" alt=""></a>
+                    </div>
+                </main>
+                <footer style="height: fit-content !important; width: 100% !important; background-color: #000 !important; padding: 12px 0px !important; text-align: center !important;">
+                    <div class="social-icons" style="padding: 10px 0px !important;">
+                        <a href="https://www.facebook.com/JimmyChoo" target="_blank" style="color: #7c7c7c !important; font-size: 20px !important; padding: 4px !important; margin: 0px 6px !important; text-decoration: none !important;"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/jimmychoo" target="_blank" style="color: #7c7c7c !important; font-size: 20px !important; padding: 4px !important; margin: 0px 6px !important; text-decoration: none !important;"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.pinterest.com/jimmychooltd" target="_blank" style="color: #7c7c7c !important; font-size: 20px !important; padding: 4px !important; margin: 0px 6px !important; text-decoration: none !important;"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://instagram.com/jimmychoo" target="_blank" style="color: #7c7c7c !important; font-size: 20px !important; padding: 4px !important; margin: 0px 6px !important; text-decoration: none !important;"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/user/OfficialJimmyChoo" target="_blank" style="color: #7c7c7c !important; font-size: 20px !important; padding: 4px !important; margin: 0px 6px !important; text-decoration: none !important;"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p style="font-size: 10px !important; text-align: center !important; letter-spacing: 0.095em !important; line-height: 16px !important; text-transform: uppercase !important; text-align: center !important; font-weight: 400 !important; color: #a6a6a6; font-family: ProximaNova,sans-serif; margin: 5px 0px !important;"><a class="footer-top-a" href="https://www.jimmychoo.com/" target="_blank" style="color: #a6a6a6; font-size: 10px !important; text-decoration: none !important;">Unsubscribe</a> | <a class="footer-top-a" href="https://row.jimmychoo.com/en/myaccount" target="_blank" style="color: #a6a6a6; font-size: 10px !important; text-decoration: none !important;">Update your details</a> | <a class="footer-top-a" href="https://row.jimmychoo.com/en/customer-service/contact-us.html" target="_blank" style="color: #a6a6a6; font-size: 10px !important; text-decoration: none !important;">Contact us</a></p>
+                    <p style="font-size: 10px !important; text-align: center !important; letter-spacing: 0.095em !important; line-height: 16px !important; text-transform: uppercase !important; text-align: center !important; font-weight: 400 !important; color: #a6a6a6 !important; font-family: ProximaNova,sans-serif; margin: 5px 0px !important;">j.choo limites, io howick place, london, swipe igw <br>company number: 03185783 <br>© 2022 jimmy choo</p>
+                </footer>
+            </div>
+        </div>
+    <!-- == Script == -->
+    <script>
+            /* ===  Loading Screen === */
+            var loadTimer;
+
+            function loadScreen() {
+                loadTimer = setTimeout(showPage, 4000);
+            }
+
+            function showPage() {
+                document.getElementById("loading").style.display = "none";
+                document.getElementById("load").style.display = "block";
+            }
+
+            /* ===  Loading Screen === */
+
+            // Button When Clicked leads to another page
+            function link() {
+                window.open("https://www.jimmychoo.com/en/home", "_blank");
+                console.log("Button Clicked");
+            }
+
+    </script>
+</html>
