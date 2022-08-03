@@ -1,0 +1,72 @@
+:root{
+--plyr-video-control-color:#FFFFFF;
+--plyr-color-main:gray;
+--plyr-video-control-background-hover:transparent;
+}
+.plyr__controls{
+    display: none;
+}
+#controls_wrap{
+transition-duration: 0.3s;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+bottom: 20px;
+z-index: 100;
+width: 400px;
+min-height: 12%;
+position: absolute;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(5px);
+background-color: rgba(0, 0, 0, 0.653);
+border-radius: 20px;
+color: var(--plyr-video-control-color);
+padding: 10px 20px;
+opacity: 1;
+}
+
+
+
+#controls_wrap_top{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+width: 100%;
+}
+
+#controls_wrap_top>.plyr__volume{
+    max-width: 20%;
+}
+#controls_wrap_bottom{
+display: flex;
+width: 100%;
+gap: 20px;
+}
+
+#controls_wrap_bottom :first-child.plyr__progress__container{
+        width: 88%;
+        padding-left: 20px;
+    }
+#controls_wrap_top_right_side{
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+}
+#controls_wrap_top_center{
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    
+}
+
+.apple_plyr_control_btn{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 0px;
+}
+
+
+.plyr--hide-controls #controls_wrap{
+opacity: 0;
+}

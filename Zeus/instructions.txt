@@ -1,0 +1,7 @@
+Hi, hope this finds you well.
+
+NB: The link to images are to a database "postimage.org" 
+    This is subject to deletion and would cause a havok
+
+    So, ensure you have your own file database, save the images to the database.
+    Then get a link to the images and replace the current links with the link to your image database

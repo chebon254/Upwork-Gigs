@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Music | Toons</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="top.css">
+  <link rel="stylesheet" href="header.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <!-- <link href="./Music.css" rel="stylesheet"/> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700;800&family=Noto+Serif+JP:wght@700&family=Noto+Serif:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/49d8df9a69.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/header.js"></script>
+</head>
+
+<body  class="body-effect" data-theme="light_theme">
+
+
+
+    <div id="whole-div">
+        <!------------------------------------------------------------------section 2------------------------------------------------------------>
+        <main class="back-image">
+            <div class="backdrop"></div>
+            <div class="nav-content">
+              <a href="/" id="main-logo"><img src="img/Toonsmultiverse.png" alt="" srcset=""></a>
+            </div>
+            <header class="header">
+            <div class="hamburger" onclick="hamburgerClick()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+          <ul class="menu-bar">
+                      <li>
+                        <img
+                        src="img/115-1153942_white-home-icon-png-white-home-logo-transparent.png"
+                          style = " padding-right: 5px;"
+                          width="18px"
+                          height="13px"
+                        />
+                      </li>
+                      <li>
+                        <img
+                          src="img/tv-xxl.png"
+                          style="padding-right: 5px; padding-bottom: 1px;"
+                          width="18px"
+                          height="13px"
+                        />Series
+                      </li>
+                      <li>
+                        <img
+                          src="img/popcorn-xxl.png"
+                          style="padding-right: 5px;"
+                          width="18px"
+                          height="13px"
+                        />Movies
+                      </li>
+                      <li>
+                        <img
+                          src="img/three-bar-menu-icon-3.jpg"
+                          style="padding-right: 5px;"
+                          width="18px"
+                          height="15px"
+                        />Live TV
+                      </li>
+                      <li>
+                        <img
+                          src="img/newspaper-xxl.png"
+                          style="padding-right: 5px;"
+                          width="18px"
+                          height="15px"
+                        />News
+                      </li>
+                      <li>
+                        <img
+                          src="img/Movie_icon.svg.png"
+                          style="padding-right: 5px;"
+                          width="18px"
+                          height="13px"
+                        />Trailers
+                      </li>
+                      <li>
+                        <img
+                          src="img/music-2-xxl.png"
+                          style="padding-right: 5px; margin-bottom: 1px"
+                          width="18px"
+                          height="13px"
+                        />Songs
+                      </li>
+                      <li class="search-li">
+                        <svg
+                          class="svg-inline--fa fa-magnifying-glass"
+                          aria-hidden="true"
+                          focusable="false"
+                          data-prefix="fas"
+                          data-icon="magnifying-glass"
+                          role="img"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                          data-fa-i2svg=""
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"
+                          ></path>
+                        </svg>
+                      </li>
+                      <li class="searchbox">
+                        <input
+                          class="searchtext"
+                          type="text"
+                          placeholder="type to search..."
+                          text-align="center"
+                        />
+                        <span class="underline"></span>
+                      </li>
+                    </ul>
+            </header>
+        
+            <!--------------------- video----------------------------->
+            <!-- <div class="playback-content"></div> -->
+            <div id="sub-main-div">
+                <div id="sub-aside" class="scroll">
+                    <div id="heading">
+                        <h2 id="top_10_title"></h2>
+                    </div>
+                    <div id="box"></div>
+                </div>
+                <div id="sub-right-div">
+                    <div id="right-heading">
+                        <h2>Now Playing</h2>
+                    </div>
+
+                    <div id="background-card">
+                        <div id="player">
+                            <iframe id="player_frame" src="" scrolling="no" allowfullscreen allowtransparency picture-in-picture allow="autoplay; picture-in-picture;"></iframe>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div id="channel_list"></div>
+        </main>
+    </div>
+    <footer>
+        <a href="https://www.instagram.com/toonsmultiverse/" target="_blank">
+        <button class="sign-in_btn">
+          <p id="signin-btn_text">
+            <i class="fab fa-instagram insta"></i>
+            ToonsMultiverse
+          </p>
+        </button>
+        </a>
+      </footer>
+    <script>
+      $(".search-li").on({
+        mouseenter: function () {
+          $(".menu-bar li").hide();
+          $(".searchbox").show();
+          $(".searchbox").css("padding", "2px 10px");
+          $(".searchbox").css("height", "43px");
+          $(".searchbox").css("box-sizing", "border-box");
+        },
+      });
+    
+      $(".searchbox").on({
+        mouseleave: function () {
+          $(".menu-bar li").show();
+          $(".searchbox").hide();
+        },
+      });
+        $(document).ready(function() {
+            try{
+                $.getJSON("songs_new.json", function(data){
+                    $('#top_10_title').html(data.top_10.title);
+                    var sr_no = 0;
+                    $.each(data.top_10.song_list, function (i, item) { sr_no++;
+                        var link = '';
+                        if(item.link != ''){
+                            link = item.link.split('?v=')[1];
+                        }
+                        
+                        if(i == 0){
+                            $('#player_frame').attr("src",'http://localhost/music_player/video_player/index.php?id='+link);
+                        }
+
+                        $('#box').append(`
+                        <div class="player play_video" data-val="`+link+`">
+                                <div class="menu-list">
+                                    <p class="player-artist">`+String(sr_no).padStart(2, '0')+`</p>
+                                    <img class="player-img" src="`+item.Image+`"/>
+                                    <i class="play-icon1 fas fa-play"></i>
+                                    <p class="player-artist">`+item.Title+`</p>
+                                </div>
+
+                                <div class="menu-right-list">
+                                    <p class="right-list">`+item.Channel+`</p>
+                                    <p class="right-list-time">`+item.TimeStamp+`</p>
+                                </div>
+                            </div>
+                       `);
+                    });
+
+                    $.each(data.channels, function (i, item) {
+                        $('#channel_list').append(`
+                            <div id="sub-header">
+                                <h3>`+item.title+`</h3>
+                                <div>
+                                    <i class="fas fa-angle-left do_scroll" data-type="left" data-id="`+i+`"></i>
+                                    <i class="fas fa-angle-right angle-icon do_scroll" data-type="right" data-id="`+i+`"></i>
+                                    <input type="hidden" id="scroll_`+i+`" value="0" />
+                                </div>
+                            </div>
+                        `);
+                        
+                        var html = `<div class="card-blog1 card-container1" id="scroll_div_`+i+`">`;
+                        $.each(item.song_list, function (j, c_list) {
+                            var link = '';
+                            if(c_list.link != ''){
+                                link = c_list.link.split('?v=')[1];
+                            }
+                            html += `
+                                <div class="box">
+                                    <a href="javascript:void(0)" class="play_video" data-val="`+link+`">
+                                    <img class="thumbnail" src="`+c_list.Image+`" alt="img"/>
+                                    <h5>`+c_list.Title+`</h5>
+                                    <p class="song-artist">Pop King</p>
+                                    </a>
+                                </div>
+                            `;
+                        });
+                        html += `</div>`;
+                        $('#channel_list').append(html);
+                    });
+                }).fail(function(){
+                    console.log("An error has occurred.");
+                });
+            }catch(e){
+
+            }
+        });
+
+        // $("html, body").animate({ scrollTop: $("#toB").offset().top }, 1500);
+        //$('#'+id+' .hero-advance-detail').scrollLeft(scroll);
+        $(document).on("click",".do_scroll",function() {
+            var id = $(this).attr('data-id');
+            var type = $(this).attr('data-type');
+            var scrollVal = parseInt($('#scroll_'+id).val());
+            if(type == 'left' && scrollVal > 0){
+                scrollVal = scrollVal - 100;
+            }else if(type == 'right'){
+                scrollVal = scrollVal + 100;
+            }
+            $('#scroll_div_'+id).animate({ scrollLeft: scrollVal }, 300);
+            $('#scroll_'+id).val(scrollVal);
+        });
+
+        $(document).on("click",".play_video",function() {
+            $('#player').show();
+            var video_id = $(this).attr('data-val');
+            $('#player_frame').attr("src",'http://localhost/music_player/video_player/index.php?id='+video_id);
+        });
+        
+    </script>
+</body>
+</html>
+</body>
+</html>

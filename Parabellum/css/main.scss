@@ -1,0 +1,468 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-variant: small-caps;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/Raleway/Raleway-VariableFont_wght.ttf');
+}
+@keyframes light {
+    100%{
+        fill: #808080;
+        // fill:url(#MyGradient);
+        // fill: linear-gradient(90deg, rgba(209,208,208,1) 0%, rgba(71,71,71,1) 100%);
+    }
+}
+@keyframes fill-text {
+    0% {
+      clip-path:circle(0% at 0% 50%);
+    }
+    
+    100% {
+      clip-path:circle(150% at 0% 50%);
+    //   color: #ffff;
+    }
+}
+@keyframes fill-text-initial {
+    0% {
+      opacity: .5;
+    }
+    
+    100% {
+      opacity: 1;
+    //   color: #ffff;
+    }
+}
+@keyframes light-africa {
+    10%{
+        fill: #808080;
+        // fill:url(#MyGradient);
+    }
+    25%{
+        fill: #bababa;
+    }
+}
+@keyframes light-australia {
+    15%{
+        fill: #bababa;
+    }
+    25%{
+        fill: #808080;
+        // fill:url(#MyGradient);
+    }
+    40%{
+        fill: #bababa;
+    }
+}
+@keyframes light-asia {
+    30%{
+        fill: #bababa;
+    }
+    40%{
+        fill: #808080;
+        // fill:url(#MyGradient);
+    }
+    55%{
+        fill: #bababa;
+    }
+}
+@keyframes light-europe {
+    45%{
+        fill: #bababa;
+    }
+    55%{
+        fill: #808080;
+        // fill:url(#MyGradient);
+    }
+    70%{
+        fill: #bababa;
+    }
+}
+@keyframes light-north_america {
+    60%{
+        fill: #bababa;
+    }
+    70%{
+        fill: #808080;
+        // fill:url(#MyGradient);
+    }
+    85%{
+        fill: #bababa;
+    }
+
+}
+@keyframes light-south_america {
+    75%{
+        fill: #bababa;
+    }
+    85%{
+        fill: #808080;
+        // fill:url(#MyGradient);
+    }
+    100%{
+        fill: #bababa;
+    }
+}
+@keyframes logo-animation {
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+.light-animation-africa{
+    animation: light-africa ease 9s infinite;
+}
+.light-animation-australia{
+    animation: light-australia ease 9s infinite;
+}
+.light-animation-asia{
+    animation: light-asia ease 9s infinite;
+}
+.light-animation-europe{
+    animation: light-europe ease 9s infinite;
+}
+.light-animation-south_america{
+    animation: light-south_america ease 9s infinite;
+}
+.light-animation-north_america{
+    animation: light-north_america ease 9s infinite;
+}
+.fill-text{
+    animation: fill-text 3s ease forwards alternate;
+}
+.fill-svg{
+    fill: black;
+    animation: fill-text 500ms ease forwards alternate;
+    path{
+        stroke: white;
+    }
+}
+.fill-svg-initial{
+    fill: black;
+    animation: none;
+    path{
+        stroke: white;
+    }
+}
+.hover-animation{
+    fill: #000000;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+.content{
+    width: 95%;
+    min-width: 320px;
+    margin: 0 auto;
+    height: 100%;
+    display: grid;
+    @supports not(display: grid){
+        display:block;
+    }
+    grid-template-rows:auto;
+    @media (min-width:431px) {
+        min-width: 600px;
+        grid-template-rows:auto;
+    }
+    @media (min-width:1025px) {
+        max-width: 1500px;
+        grid-template-rows: auto;
+    }
+    .first-content{
+        margin: 10%;
+        display: grid;
+        place-items: center;
+        margin-bottom: 4rem;
+        .item{
+            display: grid;
+            grid-template-rows: 1fr auto;
+            place-items: center;
+            align-self: end;
+            img{
+                object-fit:cover;
+                width:93.61px;
+                height: auto;
+                @supports not(display: grid){
+                    margin: 0 auto;
+                }
+                @media (min-width:431px) {
+                    width:116.35px;
+                }
+                @media (min-width:1025px) {
+                    width: 181.08px;
+                }
+                .logo{
+                    pointer-events: none;
+                    fill: none;
+                    stroke-width: 50;
+                    stroke: black;
+                }
+            }
+            span{
+                margin-top: 1rem;
+                padding-bottom: .5rem;
+                position: relative;
+                display: grid;
+                place-items: center;
+                svg{
+                    object-fit:cover;
+                    width:226.65px;
+                    height: auto;
+                    @media (min-width:431px) {
+                        width:281.71px;
+                    }
+                    @media (min-width:1025px) {
+                        width: 438.44px;
+                    }
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    width: 90%;
+                    height: auto;
+                    border-bottom: 1.3px solid #000000;
+                    @supports not(display: grid){
+                        margin: 0 auto;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                    }
+                    @media (min-width:431px)and(max-width:1024px) {
+                        width: 87%;
+                        border-bottom: 1.5px solid #000000;
+                    }
+                    @media (min-width:1025px) {
+                        border-bottom: 2px solid #000000;
+                    }
+                }
+            }
+            p{
+                margin-top: .5rem;
+                align-self: start;
+                font-family: 'Raleway', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12.4066px;
+                line-height: 15px;
+                letter-spacing: 0.15em;
+                color: #000000;
+                @media (min-width:431px) {
+                    font-size: 15.4208px;
+                    line-height: 18px;
+                }
+                @media (min-width:1025px) {
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+            }
+            @media (min-width:1025px) {
+                align-self: end;
+            }
+            @media (min-width:431px) {
+                align-self: end;
+            }
+        }
+    }
+    .second-content{
+        width: 100%;
+        .first-item{
+            width: 100%;
+            display: grid;
+            place-items: center;
+            h1{
+                font-family: 'Raleway', sans-serif;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 21px;
+                line-height: 25px;
+                text-align: center;
+                letter-spacing: 0.2em;
+                color: #000000;
+                margin-bottom: 4rem;
+                @media (min-width:431px) {
+                    font-size: 36px;
+                    line-height: 42px;
+                }
+                @media (min-width:1025px) {
+                    font-size: 64px;
+                    line-height: 75px;
+                }
+            }
+            svg{
+                @media (min-width:431px) {
+                    max-width:549.72px;
+                }
+                @media (min-width:1025px) {
+                    max-width:612.19px;
+                }
+                height: auto;
+                width: 100%;
+                max-width:371.84px;
+                object-fit: cover;
+                &:hover{
+                    transition:all 1.5s ease;
+                    .africa{
+                        animation: none;
+                        // transition: none;
+                    }
+                    .north_america{
+                        animation: none;
+                        // transition: none;
+                    }
+                    .south_america{
+                        animation: none;
+                        // transition: none;
+                    } 
+                    .asia{
+                        animation: none;
+                        // transition: none;
+                    }
+                    .australia{
+                        animation: none;
+                        // transition: none;
+                    }
+                    .europe{
+                        animation: none;
+                        // transition: none;
+                    }
+                }
+                .africa{
+                    transition:all 1.5s ease;
+                    &:hover{
+                        fill: #000000;
+                    }
+                }
+                .north_america{
+                    transition:all 1.5s ease;
+                    &:hover{
+                        fill: #000000;
+                    }
+                    
+                    // animation-delay: 4.7s;
+                }
+                .south_america{
+                    transition:all 1.5s ease;
+                    &:hover{
+                        fill: #000000;
+                    }
+                    
+                    // animation-delay: 4.7s;
+                } 
+                .asia{
+                    transition:all 1.5s ease;
+                    &:hover{
+                        fill: #000000;
+                    }
+                    
+                    // animation-delay: 4.7s;
+                }
+                .australia{
+                    transition:all 1.5s ease;
+                    &:hover{
+                        fill: #000000;
+                    }
+                    
+                    // animation-delay: 4.7s;
+                }
+                .europe{
+                    transition:all 1.5s ease;
+                    &:hover{
+                        fill: #000000;
+                    }
+                    // animation-delay: 4.7s;
+                }
+            }
+        }
+        .second-item{
+            display: grid;
+            .animals{
+                transform: translateY(-20%);
+                @supports not(transform: translateY(-20%)){
+                    margin-top: -10%;
+                }
+                position: relative;
+                display: grid;
+                place-items: center;
+                img{
+                    @media (min-width:431px) {
+                        max-width:429px;
+                    }
+                    @media (min-width:1025px) {
+                        max-width: 540px;
+                    }
+                    @supports not(display: grid){
+                        margin: 0 auto;
+                        display: block;
+                    }
+                    object-fit: cover;
+                    width: 100%;
+                    max-width:335.28px;
+                    height: auto;
+                    pointer-events: none;
+                }
+                a{
+                    position: absolute;
+                    bottom: 1rem;
+                    text-decoration: none;
+                    @supports not(display: grid){
+                        width: 100%;
+                        text-align: center;
+                    }
+                    // &:hover{
+                    //     .mail{
+                    //         svg{
+                    //             fill: black;
+                    //             animation: fill-text 500ms ease forwards alternate;
+                    //             path{
+                    //                 stroke: white;
+                    //             }
+                    //         }
+                    //     }
+                    // }
+                    @media (min-width:431px) {
+                        bottom: 2.2rem;
+                    }
+                    .mail{
+                        display: grid;
+                        grid-template-columns: auto 1fr;
+                        grid-column-gap: .4rem;
+                        place-items:center;
+                        // animation: fill-text 3s ease-in-out forwards alternate;
+                        // opacity: .8;
+                        span{
+                            font-family: 'Raleway', sans-serif;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 16px;
+                            color: #000000;
+                            font-variant: normal;
+                            @media (min-width:1025px) {
+                                font-size: 18px;
+                                line-height: 21px;
+                            }
+                            @supports not(display: grid){
+                                vertical-align: super;
+                            }
+                        }
+                        @media (min-width:1025px) {
+                            svg{
+                                width: 30px;
+                                height: 30px;
+                            }
+                        }
+                        .mail-icon{
+                            transition: fill 400ms ease;
+                            path{
+                                transition: stroke 400ms;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

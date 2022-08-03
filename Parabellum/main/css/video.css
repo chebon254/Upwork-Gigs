@@ -1,0 +1,24 @@
+.vjs-theme-forest {
+    --vjs-theme-forest--primary: #000000 !important;
+    --vjs-theme-forest--secondary: #fff !important;
+}
+
+.vjs-theme-forest.vjs-big-play-button:focus,.vjs-theme-forest:hover .vjs-big-play-button {
+    background-color: transparent;
+    background: url("forest/icons/play-small.svg") !important;
+}
+
+.vjs-theme-forest .vjs-control:not(.vjs-disabled):not(.vjs-time-control):hover {
+    color: var(--vjs-theme-forest--primary) !important;
+    text-shadow: var(--vjs-theme-forest--secondary) 1px 0 10px !important;
+}
+
+.vjs-theme-forest .vjs-play-control .vjs-icon-placeholder:before {
+    background-color: var(--vjs-theme-forest--secondary) !important;
+    color: var(--vjs-theme-forest--primary) !important;
+}
+
+.vjs-theme-forest .vjs-play-control:hover .vjs-icon-placeholder:before {
+    background-color: var(--vjs-theme-forest--primary) !important;
+    color: var(--vjs-theme-forest--secondary) !important;
+}
