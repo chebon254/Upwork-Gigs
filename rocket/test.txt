@@ -1,3 +1,32 @@
+curl \
+--ssl-reqd \
+--url 'smtp://sandbox.smtp.mailtrap.io:2525' \
+--user 'fb63642e825d52:0c855eb080a4b3' \
+--mail-from from@example.com \
+--mail-rcpt to@example.com \
+--upload-file - <<EOF
+From: Magic Elves <from@example.com>
+To: Mailtrap Inbox <to@example.com>
+Subject: You are awesome!
+Content-Type: multipart/alternative; boundary="boundary-string"
+
+--boundary-string
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+Congrats for sending test email with Mailtrap!
+
+If you are viewing this email in your inbox – the integration works.
+Now send your email using our SMTP server and integration of your choice!
+
+Good luck! Hope it works.
+
+--boundary-string
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -105,3 +134,7 @@
   </table>
 </body>
 </html>
+
+
+--boundary-string--
+EOF
