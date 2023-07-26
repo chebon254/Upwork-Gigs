@@ -1,5 +1,6 @@
 curl \
---ssl-reqd \
+c-
+-ssl-reqd \
 --url 'smtp://sandbox.smtp.mailtrap.io:2525' \
 --user 'fb63642e825d52:0c855eb080a4b3' \
 --mail-from from@example.com \
