@@ -1,8 +1,7 @@
 curl \
-c-
--ssl-reqd \
+--ssl-reqd \
 --url 'smtp://sandbox.smtp.mailtrap.io:2525' \
---user 'fb63642e825d52:0c855eb080a4b3' \
+--user '70f19eef85c623:8aa2cf7c43a68a' \
 --mail-from from@example.com \
 --mail-rcpt to@example.com \
 --upload-file - <<EOF
@@ -30,6 +29,7 @@ Content-Disposition: inline
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,6 +37,7 @@ Content-Disposition: inline
   <title>Rocket</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Raleway');
+
     /* latin */
     @font-face {
       font-family: 'Raleway';
@@ -48,83 +49,97 @@ Content-Disposition: inline
     }
   </style>
 </head>
+
 <body style="padding:0;margin:0;width:100% !important;font-family:'Raleway', sans-serif !important;font-size:6vw;background:linear-gradient(44.93deg, #4481E3 -30.39%, #4782F7 47.42%, #4481E3 105.42%) !important;">
   <table role="presentation" style="width:100%;border-collapse:collapse;border-spacing:0;text-align:center;margin:0 auto;background:linear-gradient(44.93deg, #4481E3 -30.39%, #4782F7 47.42%, #4481E3 105.42%) !important;">
     <tr>
-      <td align="center" style="padding:0;">
-        <table role="presentation" style="margin:0 auto;width:100%;max-width:600px;min-width:280px;border-collapse:collapse;border-spacing:0;text-align:center;">
+      <td align="center" style="padding:0;margin:0 auto;width:100%;">
+        <table role="presentation" style="margin:0 auto;width:100%;min-width:280px;border-collapse:collapse;border-spacing:0;text-align:center;">
           <tr>
             <td style="padding:36px 30px 42px 30px;">
               <!--[if (gte mso 9)|(IE)]>
-              <table role="presentation" style="width:600px;border-collapse:collapse;border-spacing:0;">
-              <tr>
-              <td>
-              <![endif]-->
-              <table role="presentation" style="width:100%;border-collapse:collapse;border-spacing:0;">
+                <table role="presentation" style="width:100%;border-collapse:collapse;border-spacing:0; text-align:center;">
+                    <tr>
+                        <td style="padding:60px 0px 80px 0px; text-align:center;">
+                            <![endif]-->
+              <table role="presentation" style="width:100%;border-collapse:collapse;border-spacing:0; text-align:center;">
                 <tr>
-                  <td style="padding:60px 0px 80px 0px;">
+                  <td style="padding:60px 0px 80px 0px; text-align:center;">
                     <!--[if (gte mso 9)|(IE)]>
-                    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:240px;">
-                      <v:imagedata src="https://i.postimg.cc/bN5PqSJs/Ready-to-Win.png" style="max-width:100%;" />
+                    <v:rect
+                        xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:190px;">
+                        <v:imagedata src="https://i.postimg.cc/bN5PqSJs/Ready-to-Win.png" />
                     </v:rect>
                     <![endif]-->
-                    <!--[if !((gte mso 9)|(IE))]><!-->
-                    <img src="https://i.postimg.cc/bN5PqSJs/Ready-to-Win.png" alt="Ready to Win" width="240" style="display:block;width:100%;height:auto;margin:0 auto;">
-                    <!--<![endif]-->
+                    <!--[if !((gte mso 9)|(IE))]>
+                    <!-->
+                    <img src="https://i.postimg.cc/bN5PqSJs/Ready-to-Win.png" alt="Ready to Win" width="190px"
+                      style="display:block;width:100%;height:auto;margin:0 auto;">
+                    <!--
+                    <![endif]-->
                   </td>
                 </tr>
               </table>
               <!--[if (gte mso 9)|(IE)]>
-              </td>
-              </tr>
+                      </td>
+                  </tr>
               </table>
               <![endif]-->
               <!--[if (gte mso 9)|(IE)]>
-              <table role="presentation" style="width:600px;border-collapse:collapse;border-spacing:0;">
-              <tr>
-              <td>
-              <![endif]-->
-              <table role="presentation" style="width:100%;border-collapse:collapse;border-spacing:0;">
-                <tr>
-                  <td>
+              <table role="presentation" style="width:600px;border-collapse:collapse;border-spacing:0;margin:0 auto !important;text-align: center !important;">
+                  <tr style="margin:0 auto !important;text-align: center !important;">
+                      <td style="margin:0 auto !important;text-align: center !important;>
+                          <![endif]-->
+              <table role="presentation"
+                style="width:100%;border-collapse:collapse;border-spacing:0;margin:0 auto !important;text-align: center !important;">
+                <tr style="margin:0 auto !important;text-align: center !important;">
+                  <td style="text-align: center !important;margin:0 auto !important;">
                     <!--[if (gte mso 9)|(IE)]>
-                    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:70%;">
-                      <v:imagedata src="https://i.postimg.cc/tR578HrZ/rocket-smock-1.png" style="max-width:100%;" />
+                    <v:rect
+                        xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:190px;">
+                        <v:imagedata src="https://i.postimg.cc/tR578HrZ/rocket-smock-1.png" style="display:block;height:auto;margin:0 auto 0 !important; />
                     </v:rect>
                     <![endif]-->
-                    <!--[if !((gte mso 9)|(IE))]><!-->
-                    <img src="https://i.postimg.cc/tR578HrZ/rocket-smock-1.png" alt="Rocket" width="70%" style="display:block;width:70%;height:auto;margin:0 auto;">
-                    <!--<![endif]-->
+                    <!--[if !((gte mso 9)|(IE))]>
+                    <!-->
+                    <img src="https://i.postimg.cc/tR578HrZ/rocket-smock-1.png" alt="Rocket" width="190px"
+                      style="display:block;width:190px;height:auto;margin:0 auto;">
+                    <!--
+                    <![endif]-->
                   </td>
                 </tr>
               </table>
               <!--[if (gte mso 9)|(IE)]>
-              </td>
-              </tr>
+                      </td>
+                  </tr>
               </table>
               <![endif]-->
               <!--[if (gte mso 9)|(IE)]>
               <table role="presentation" style="width:600px;border-collapse:collapse;border-spacing:0;">
-              <tr>
-              <td>
-              <![endif]-->
+                  <tr>
+                      <td style="padding:60px 0px 80px 0px; text-align:center;">
+                          <![endif]-->
               <table role="presentation" style="width:100%;border-collapse:collapse;border-spacing:0;">
                 <tr>
                   <td style="padding:60px 20px 80px 20px;">
                     <!--[if (gte mso 9)|(IE)]>
-                    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:210px;">
-                      <v:imagedata src="https://i.postimg.cc/k5Hw4SZh/GET-READY-TO-GO-TO-THE-MOON.png" style="max-width:100%;" />
+                    <v:rect
+                        xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:190px;">
+                        <v:imagedata src="https://i.postimg.cc/k5Hw4SZh/GET-READY-TO-GO-TO-THE-MOON.png" style="width:100%;" />
                     </v:rect>
                     <![endif]-->
-                    <!--[if !((gte mso 9)|(IE))]><!-->
-                    <img src="https://i.postimg.cc/k5Hw4SZh/GET-READY-TO-GO-TO-THE-MOON.png" alt="Go to the Moon" width="210" style="display:block;width:100%;height:auto;margin:0 auto;">
-                    <!--<![endif]-->
+                    <!--[if !((gte mso 9)|(IE))]>
+                    <!-->
+                    <img src="https://i.postimg.cc/k5Hw4SZh/GET-READY-TO-GO-TO-THE-MOON.png" alt="Go to the Moon"
+                      width="190px" style="display:block;width:100%;height:auto;margin:0 auto;">
+                    <!--
+                    <![endif]-->
                   </td>
                 </tr>
               </table>
               <!--[if (gte mso 9)|(IE)]>
-              </td>
-              </tr>
+                      </td>
+                  </tr>
               </table>
               <![endif]-->
             </td>
@@ -134,7 +149,9 @@ Content-Disposition: inline
     </tr>
   </table>
 </body>
+
 </html>
+
 
 
 --boundary-string--
